@@ -1,5 +1,5 @@
 -- Create a database called ' bamazon' and witch into it for this activity --
-CREATE DATABASE bamazon
+CREATE DATABASE bamazon;
 USE bamazon;
 
 -- Create a table called 'products' which will contain the store inventory --

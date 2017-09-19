@@ -23,7 +23,7 @@ var connection = mysql.createConnection({
 
 // validateInput makes sure that the user is supplying only positive integers for their inputs
 function validateInput(value) {
-    var integer = NumberisInteger(parseFloat(value));
+    var integer = Number.isInteger(parseFloat(value));
     var sign = Math.sign(value);
 
     if (integer && (sign ===1)) {
