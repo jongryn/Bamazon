@@ -54,7 +54,7 @@ function promptManagerAction() {
 
         // Trigger the appropriate action based on the user input
         if (input.option === 'sale') {
-            displayInvenotry();
+            displayInventory();
         } else if (input.option === 'lowInventory') {
             displayLowInventory();
         } else if (input.option === 'addInventory') {
