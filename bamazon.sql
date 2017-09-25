@@ -1,15 +1,15 @@
 -- Create a database called ' bamazon' and witch into it for this activity --
-CREATE DATABASE bamazon;
-USE bamazon;
+create database bamazon;
+use bamazon;
 
 -- Create a table called 'products' which will contain the store inventory --
-CREATE TABLE products (
-  item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
-  product_name VARCHAR(30) NOT NULL,
-  department_name VARCHAR(20) NOT NULL,
-  price DECIMAL(10,2) NOT NULL,
-  stock_quantity INTEGER(11) NOT NULL,
-  PRIMARY KEY (item_id)
+create table products(
+	itemid integer auto_increment not null,
+    product_name varchar(45) not null,
+    department_name varchar(45) not null,
+    price decimal(10, 4) not null,
+    stock_quantity integer(10) not null,
+    primary key (itemid)
 );
 
 -- Insert data into the 'products' table --
@@ -34,3 +34,5 @@ VALUES ('Dove Shampoo', 'Cosmetics', 5.75, 500),
                ('Ibuprophen', 'Pharmacy', 4.95, 389),
                ('Band Aid', 'Pharmacy', 3.25, 550),
                ('Ben & Jerry Ice Cream', 'Grocery', 3.25, 432);
+               
+select * from bamazon.products;
